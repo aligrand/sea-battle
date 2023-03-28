@@ -28,14 +28,14 @@ then, move to the directory
 compile the sources
 
     gcc -Wall sb_globdef.h s* -o seabattle
-    gcc
+  
 # run
 use this command
 
     ./seabattle
 
 # online gaming
-for online gaming you have two option, using docker or config your  linux server with my ansible playbook
+for online gaming you have three options, using docker or config your  linux server with my ansible playbook or setup an ftp server on a device
 
 1.DOCKER
 
@@ -69,9 +69,14 @@ now you can run my ansible playbook with this command
 
 your server will be configed automatically 
 
+3.ftp server
 
-after setting up your server, you have to edit  ftp-download, ftp-upload, WINftp-download.txt and WINftp-upload.txt in ftpc directory.
-*remmember if you havent changed my config files your username will be ansible and your pass will be ansible1234 and your port in 21
+for this we recommend use your android device and install a ftp server app
+on it. another notice if you don't want to use your android device as ftp server you must use a __linux__
+device for ftp server.
+
+after setting up your server, you have to edit  ftp-download, ftp-upload, WINftp-download.txt and WINftp-upload.txt in ftpc directory.<br>
+__in case 1 & 2:__ remmember if you havent changed my config files your username will be ansible and your pass will be ansible1234 and your port in 21
 
 before start the game, you have to upload conf_online_data.bin (in name of online_data.bin in ftp server) to your ftp server. for this, you must use below commands.<br><br>
     
